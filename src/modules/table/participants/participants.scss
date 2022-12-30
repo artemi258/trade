@@ -1,0 +1,34 @@
+.participants {
+  &__column {
+    padding: 0;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    li {
+      list-style-type: none;
+      width: 200px;
+      padding: 5px;
+      text-align: center;
+      &:nth-child(n + 3):nth-child(odd) {
+        background-color: #f4f4f4;
+      }
+      &:nth-child(1) {
+        height: 100px;
+      }
+      &:nth-child(2) {
+        height: 100px;
+        color: #9cbdc9;
+      }
+      &:nth-child(3) {
+        height: 50px;
+      }
+      &:nth-child(n + 4):nth-child(-n + 6) {
+        height: 30px;
+      }
+      &:nth-child(7) {
+        height: 70px;
+      }
+    }
+  }
+}
